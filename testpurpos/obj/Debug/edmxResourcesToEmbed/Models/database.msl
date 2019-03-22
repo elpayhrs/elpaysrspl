@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebDateDBModelStoreContainer" CdmEntityContainer="WebDateDBEntities">
+    <EntitySetMapping Name="Dates">
+      <EntityTypeMapping TypeName="WebDateDBModel.Date">
+        <MappingFragment StoreEntitySet="Date">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date1" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
