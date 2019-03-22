@@ -15,21 +15,21 @@ namespace testpurpos.Models
     public partial class Date
     {
         public int ID { get; set; }
-        public Nullable<System.DateTime> Date1 { get; set; }
+        public Nullable<System.DateTime> Date1 
+        { 
+             get{return Dateformate} 
+             set
+             { 
+                   Date d = Date(yyyy-mm-dd);
+                   if(Dateformate == d)
+                   {
+                     Dateformate = d.DayofWeek;
+                   }
 
-
-        public void SetID( int id)
-        {
-            if(id <= 0)
-            {
-                throw new Exception("error");
-            }
-            int ID = id;
+             }
         }
 
-        public int GetId()
-        {
-            return ID;
-        }
+
+        
     }
 }
